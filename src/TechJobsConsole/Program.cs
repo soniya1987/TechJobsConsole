@@ -119,7 +119,18 @@ namespace TechJobsConsole
 
         private static void PrintJobs(List<Dictionary<string, string>> someJobs)
         {
-            Console.WriteLine("PrintJobs is not implemented yet");
+           // Console.WriteLine("PrintJobs is not implemented yet");
+            foreach (Dictionary<string, string> item in someJobs)
+            {
+                Console.WriteLine("\n*****");
+                foreach(KeyValuePair<string,string> key in item)
+                {
+                    Console.WriteLine(key.Key + ": " + key.Value);
+                }
+                Console.WriteLine("*****");
+            }
         }
+        
+
     }
 }
